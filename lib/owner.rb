@@ -34,7 +34,8 @@ class Owner
   end
   
   def buy_cat(name)
-  Cat.all.select {|cat| cat.name == name} 
+  new_cats = Cat.all.select {|cat| cat.name == name} 
+  new_cats.count
   end 
     
 end
