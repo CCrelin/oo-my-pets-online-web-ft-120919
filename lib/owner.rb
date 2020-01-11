@@ -42,8 +42,9 @@ class Owner
     Dog.new(name, self)
   end
   
-  def walk_dogs(mood)
-    Dog.mood(mood)
+  def walk_dogs
+    binding.pry 
+    Dog.mood
     
   end 
     
