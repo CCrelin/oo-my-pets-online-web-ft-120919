@@ -40,7 +40,4 @@ class Owner
     owners_cats.count
   end 
     
-  
-  end
-  
 end
