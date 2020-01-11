@@ -35,9 +35,7 @@ class Owner
   end
   
   def buy_cat(name)
-    owners_cats = []
-    owners_cats << Cat.new(name)
-    owners_cats.count
+  Cat.new(name)
   end 
     
 end
