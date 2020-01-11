@@ -1,3 +1,4 @@
+require "pry"
 class Owner
   attr_reader :name, :species
   
@@ -34,8 +35,9 @@ class Owner
   end
   
   def buy_cat(name)
-  new_cats = Cat.all.select {|cat| cat.name == name} 
-  new_cats.count
+  binding.pry
+  Cat.all.select {|cat| cat.name == name} 
+  
   end 
     
 end
